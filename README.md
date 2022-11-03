@@ -1,4 +1,4 @@
-Numpy básico
+#Numpy básico
 
 Numpy é a abreviação de Numerical Python e é um dos pacotes mais importantes para processamento numérico em Python. Numpy oferece a base para a maioria dos pacotes de aplicações científicas que utilizem dados numéricos em Python (estruturas de dados e algoritmos).
 
@@ -23,11 +23,11 @@ Alguns pacotes são bastante utilizados em um contexto de ciência de dados como
 Alguns pacotes não são distribuídos com a instalação default do Python. Neste caso devemos instalar os pacotes que necessitamos em nosso sistema para podermos utilizar suas funcionalidades.
 
 
-Criando arrays Numpy
+##Criando arrays Numpy
 
 A biblioteca Numpy, nos disponibiliza uma função semelhante ao range, mas diferente do range, ele cria um arry do numpy.
 
-Obs:
+###Obs:
 diferente das listas em Python, os arrays do numpy, só suportam um mesmo tipo de dados, por array.
 
 No Python:
