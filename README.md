@@ -66,7 +66,7 @@ import numpy as np
 km = np.loadtxt(fname = r'C:\Users\matheus.ptasinski\Desktop\Alura\Formação - Python para Data Science\python-data-science-aula-1-inicio\Python_Data_Science\Numpy\data\carros-km.txt', dtype = int)
 ```
 
-Arrays de multipla-dimensões
+### Arrays de multipla-dimensões
 A biblioteca Numpy nos da a possiblidade  de trabalhar comn arrays de multipla-dimensões.
 Nesse modulo vamos nos limitar aos arrays de 2 dimensões, as matrizes ou tabelas.
 
@@ -110,10 +110,10 @@ Após executar os dois códigos, chegamos a conclusão que o numpy é muita mais
 Enquanto o Python demora 14 segundos para fazer uma operação, o Numpy faz a mesma  
 
 
-Operações aritméticas com arrays Numpy
+## Operações aritméticas com arrays Numpy
 
 
-Operações entre arrays e constantes
+### Operações entre arrays e constantes
 
 Com listas do Python:
 ```
@@ -157,7 +157,7 @@ km_media_ano = km/anos
 print(km_media_ano)
 ```
 
-Operações com arrays de duas dimensões
+### Operações com arrays de duas dimensões
 No python:
 ```
 import numpy as np
@@ -173,7 +173,7 @@ km_media = dados[0] / dados[1]
 
 
 
-Seleção com arrays
+## Seleção com arrays
 
 A seleção em arrays se assemelha muito com a seleção de listas.
 Mas com algumas pequenas implementações, por exemplo:
@@ -218,7 +218,7 @@ media = dados[:,1:4][0]/dados[:,1:4][1]
 print(media)
 ```
 
-Isso ocorre apenas com arrays Numpy e não ocorre com listas
+### Isso ocorre apenas com arrays Numpy e não ocorre com listas
 
 Outra maneira interessante de percorrer um array é com pulos, como podemos ver a seguir:
 No Python:
@@ -233,7 +233,7 @@ print(lista[0:8:2])
 Nesse caso, o código nos retorna uma lista, com os itens que estão entre o index 0 e 7,  começando no index 0 e indo / pulando 2 em 2
 
 
-Indexação com array booleano
+## Indexação com array booleano
 
 Uma outra funcionalidade muito interessante é que podemos filtrar nossos arrays de uma maneira bem simples 
 
@@ -258,7 +258,7 @@ print(dados[1][dados[1]>2000])
 ```
 
 
-Atributos e métodos do Numpy
+## Atributos e métodos do Numpy
 
 
 Atributos
@@ -277,7 +277,7 @@ dados = np.array([km, anos])
 print(dados.shape)# 2 linhas e 5 colunas
 ```
 
-ndarray.ndim
+### ndarray.ndim
 Retorna o número de dimensões do array
 No Python:
 ```
@@ -290,7 +290,7 @@ dados = np.array([km, anos])
 print(dados.ndim)# 2 dimenções
 ```
 
-ndarray.size
+### ndarray.size
 Retorna o número de elementos de um array
 No Python:
 ```
@@ -303,7 +303,7 @@ dados = np.array([km, anos])
 print(dados.size)# 10 itens
 ```
 
-ndarray.dtype
+### ndarray.dtype
 Retorna o tipo de dados dos elementos do array
 No Python:
 ```
@@ -322,7 +322,7 @@ dados = np.array([km, anos])
 print(dados.dtype)#float64
 ```
 
-ndarray.T
+### ndarray.T
 Retorna o array transposto, isto é, converte linhas em colunas e vice versa.
 No Python:
 ```
@@ -360,10 +360,10 @@ print(dados.transpose())#
 #  [    0.  2019.]
 #  [25757.  2006.]]
 ```
-Métodos
+## Métodos
 Agora vamos pincelar alguns dos atributos mais importantes do Numpy, mas caso deseje, pode consultar todos nesse link
 
-ndarray.tolist()
+### ndarray.tolist()
 Retorna o array como uma lista Python
 No Python:
 ```
@@ -377,7 +377,7 @@ dados = np.array([km, anos])
 print(dados.tolist())#[[44410.0, 5712.0, 37123.0, 0.0, 25757.0], [2003.0, 1991.0, 1990.0, 2019.0, 2006.0]]
 ```
 
-ndarray.reshape(shape[,order])
+### ndarray.reshape(shape[,order])
 Retorna um array que contém os mesmos dados com uma nova forma.
 No Python:
 ```
@@ -398,7 +398,7 @@ print(lista)
 print(lista.reshape((5,2), order='F'))# retorna um array com os mesmos dados mas de uma forma diferente
 ```
 
-ndarray.resize(newshape[,refcheck])
+### ndarray.resize(newshape[,refcheck])
 Altera a forma e o tamanho do array.
 No Python:
 ```
